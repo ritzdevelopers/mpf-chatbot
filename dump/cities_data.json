@@ -1,0 +1,2052 @@
+[
+    {
+        "id": 1,
+        "stateId": 1,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Agra – The Iconic City of the Taj Mahal & Mughal Heritage",
+        "metaKeywords": "Agra, Taj Mahal, Mughal heritage, Agra tourism, historical monuments, Agra Fort, Fatehpur Sikri, Agra travel guide, best places in Agra, Uttar Pradesh tourism, Yamuna River, Agra cuisine.",
+        "metaDescription": "Discover Agra, home to the world-famous Taj Mahal, rich Mughal heritage, and historical landmarks. Explore its vibrant culture, delicious cuisine, and architectural wonders.",
+        "cityName": "Agra",
+        "stateName": "Uttar Pradesh",
+        "countryName": "India",
+        "cityDescription": "Agra, located in the Indian state of Uttar Pradesh, is a city steeped in history and known globally for the iconic Taj Mahal, one of the Seven Wonders of the World. Once the capital of the Mughal Empire, Agra is home to several UNESCO World Heritage Sites, including the majestic Agra Fort and Fatehpur Sikri. The city’s rich heritage is reflected in its stunning Mughal architecture, vibrant markets, and traditional crafts like marble inlay work. Agra is also famous for its delicious cuisine, particularly the sweet treat ‘Petha’ and Mughlai dishes. Situated on the banks of the Yamuna River, Agra continues to attract tourists from around the world, offering a perfect blend of history, culture, and architectural splendor.",
+        "cityImage": null,
+        "slugURL": "agra",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 18,
+        "stateId": 6,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Explore Bangalore - Silicon Valley of India | Travel, Tech & Culture",
+        "metaKeywords": "Bangalore tourism, Bangalore city guide, IT hub India, places to visit in Bangalore, Bangalore culture, Bangalore travel, Silicon Valley of India, things to do in Bangalore, Bangalore weather, Bangalore tech industry",
+        "metaDescription": "Discover Bangalore, India's tech capital, known for its vibrant culture, pleasant weather, IT hubs, and rich history. Explore top attractions, dining, shopping, and more.",
+        "cityName": "Bangalore",
+        "stateName": "Karnataka",
+        "countryName": "India",
+        "cityDescription": "Bangalore, also known as Bengaluru, is the capital of Karnataka and a dynamic metropolis often referred to as the Silicon Valley of India. The city is a thriving center for information technology, startups, and innovation, attracting professionals and entrepreneurs from across the globe.\n\nBangalore is also known for its pleasant year-round climate, lush green spaces like Lalbagh Botanical Garden and Cubbon Park, and a rich cultural heritage that blends tradition with modernity. Visitors can explore historic landmarks like Bangalore Palace, Tipu Sultan’s Summer Palace, and the iconic Vidhana Soudha.\n\nThe city offers a diverse culinary scene, buzzing nightlife, and a growing reputation in art, music, and design. With excellent connectivity, shopping districts like Brigade Road and Commercial Street, and proximity to scenic getaways like Nandi Hills, Bangalore offers something for everyone—whether you're a tech enthusiast, culture lover, or adventure seeker.\n\n",
+        "cityImage": null,
+        "slugURL": "bangalore",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 43,
+        "stateId": 1,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Bareilly | City of Culture, Business & Opportunities",
+        "metaKeywords": "Bareilly, Bareilly city, Bareilly UP, Bareilly culture, Bareilly tourism, Bareilly real estate",
+        "metaDescription": "Explore Bareilly, UP: rich culture, history, business hubs, and growing real estate opportunities.",
+        "cityName": "Bareilly",
+        "stateName": "Uttar Pradesh",
+        "countryName": "India",
+        "cityDescription": "Bareilly is a vibrant city in Uttar Pradesh, known for its rich cultural heritage, historical landmarks, and bustling markets. It also serves as a growing hub for business, education, and real estate opportunities.",
+        "cityImage": null,
+        "slugURL": "bareilly",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 33,
+        "stateId": 2,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Chandigarh – The Modern City of Architecture, Gardens & Lifestyle",
+        "metaKeywords": "Chandigarh, Chandigarh tourism, Chandigarh attractions, Chandigarh gardens, City Beautiful, Chandigarh lifestyle, Chandigarh architecture, Chandigarh travel guide, Chandigarh shopping, Chandigarh real estate",
+        "metaDescription": "Explore Chandigarh, India’s meticulously planned city known for its modern architecture, lush gardens, and vibrant lifestyle. Discover top attractions, cultural landmarks, shopping hubs, and serene living spaces in the “City Beautiful.”",
+        "cityName": "Chandigarh",
+        "stateName": "Punjab",
+        "countryName": "India",
+        "cityDescription": "Chandigarh is a modern, meticulously planned city in India, renowned for its architecture, gardens, clean environment, and vibrant lifestyle.",
+        "cityImage": null,
+        "slugURL": "chandigarh",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 37,
+        "stateId": 14,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Chennai – Gateway to South India | Culture, Business & Travel",
+        "metaKeywords": "Chennai, Chennai tourism, Chennai city guide, Chennai travel, capital of Tamil Nadu, Chennai IT hub, Marina Beach Chennai, temples in Chennai, Chennai culture, South India cities",
+        "metaDescription": "Explore Chennai, the capital of Tamil Nadu, known for its rich culture, historic landmarks, thriving IT and business hubs, and scenic beaches. Discover top attractions, local cuisine, and travel insights.",
+        "cityName": "Chennai",
+        "stateName": "Tamil Nadu",
+        "countryName": "India",
+        "cityDescription": "Chennai, the capital of Tamil Nadu, is a vibrant coastal city known for its cultural heritage, historic temples, classical music, and thriving IT industry. With beautiful beaches and rich traditions, it blends modern urban life with deep-rooted South Indian culture.",
+        "cityImage": null,
+        "slugURL": "chennai",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 32,
+        "stateId": 13,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Uttarakhand – The Land of Gods | Scenic Himalayan State & Adventure Destination",
+        "metaKeywords": "Uttarakhand, Uttarakhand tourism, Himalayan state, spiritual destinations Uttarakhand, adventure tourism Uttarakhand, hill stations Uttarakhand, nature in Uttarakhand, temples in Uttarakhand, scenic landscapes Uttarakhand",
+        "metaDescription": "Discover Uttarakhand, a beautiful Himalayan state renowned for its spiritual temples, breathtaking landscapes, adventure tourism, and rich cultural heritage. Explore serene mountains, lush forests, and vibrant hill towns.",
+        "cityName": "Dehradun",
+        "stateName": "Uttarakhand",
+        "countryName": "India",
+        "cityDescription": "Uttarakhand is a beautiful northern Indian state known for its majestic Himalayan landscapes, spiritual pilgrimage sites, and rich biodiversity. Often called the \"Land of Gods,\" it is home to famous temples like Kedarnath and Badrinath, attracting millions of devotees. The state offers a perfect blend of adventure tourism—such as trekking, rafting, and skiing—and serene natural beauty with lush forests, rivers, and valleys. Uttarakhand also boasts charming hill stations like Nainital and Mussoorie, making it a favored destination for both nature lovers and spiritual seekers.",
+        "cityImage": null,
+        "slugURL": "dehradun",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 30,
+        "stateId": 10,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Explore Delhi: History, Culture, and Modern Living | Discover Delhi India",
+        "metaKeywords": "Delhi tourism, Delhi city guide, Red Fort, India Gate, places to visit in Delhi, Old Delhi, New Delhi, Delhi travel, Delhi culture, Delhi heritage",
+        "metaDescription": "Discover Delhi, the capital city of India — a vibrant blend of rich history, cultural heritage, and modern lifestyle. Explore its monuments, food, markets, and more.",
+        "cityName": "Delhi",
+        "stateName": "Delhi",
+        "countryName": "India",
+        "cityDescription": "Delhi, the capital of India, is a city where ancient traditions meet modern innovations. Home to historic landmarks like the Red Fort, Qutub Minar, and India Gate, Delhi offers a deep dive into India’s rich past. The city is divided into Old Delhi, known for its bustling markets and Mughal-era architecture, and New Delhi, characterized by wide boulevards, government buildings, and modern infrastructure. A cultural melting pot, Delhi captivates visitors with its street food, festivals, shopping, and dynamic lifestyle — making it one of India’s most iconic destinations.",
+        "cityImage": null,
+        "slugURL": "delhi",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 51,
+        "stateId": 10,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": null,
+        "metaKeywords": null,
+        "metaDescription": null,
+        "cityName": "Delhi South West",
+        "stateName": "Delhi",
+        "countryName": "India",
+        "cityDescription": null,
+        "cityImage": null,
+        "slugURL": "delhi-south-west",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 47,
+        "stateId": 10,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Dwarka | Residential Properties, Flats & Real Estate in Dwarka",
+        "metaKeywords": "Dwarka Delhi, properties in Dwarka, flats in Dwarka Delhi, residential projects Dwarka, real estate Dwarka Delhi, apartments in Dwarka, Dwarka property investment, housing in Dwarka Delhi",
+        "metaDescription": "Dwarka, Delhi is a well-planned residential hub offering modern apartments, excellent connectivity, schools, and commercial centers. Explore property options in Dwarka for comfortable and convenient urban living.",
+        "cityName": "Dwarka",
+        "stateName": "Delhi",
+        "countryName": "India",
+        "cityDescription": "Dwarka is one of the most well-planned residential sub-cities in Delhi, known for its organized sectors, wide roads, and modern infrastructure. It offers a mix of apartments, builder floors, and commercial spaces, making it a preferred choice for homebuyers and investors.",
+        "cityImage": null,
+        "slugURL": "dwarka",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 35,
+        "stateId": 5,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Buy Property in Faridabad – Residential & Commercial Real Estate Deals",
+        "metaKeywords": "Faridabad property, real estate in Faridabad, flats in Faridabad, plots in Faridabad, apartments in Faridabad, Faridabad residential projects, commercial property Faridabad, buy property in Faridabad, Faridabad real estate market",
+        "metaDescription": "Explore top residential and commercial properties in Faridabad. Find apartments, plots, villas, and shops in prime locations with modern amenities. Ideal for families, investors, and professionals looking for growth and connectivity near Delhi NCR.",
+        "cityName": "Faridabad",
+        "stateName": "Haryana",
+        "countryName": "India",
+        "cityDescription": "Faridabad is a fast-growing city in Haryana, part of Delhi NCR, known for its industrial base, improving infrastructure, and emerging residential hubs ideal for modern living and investment.",
+        "cityImage": null,
+        "slugURL": "faridabad",
+        "projectList": null,
+        "localities": [
+            {
+                "id": 2,
+                "localityName": "Sector 7"
+            },
+            {
+                "id": 3,
+                "localityName": "Sector 8"
+            },
+            {
+                "id": 4,
+                "localityName": "Sector 9"
+            },
+            {
+                "id": 5,
+                "localityName": "Sector 10"
+            },
+            {
+                "id": 6,
+                "localityName": "Sector 11"
+            },
+            {
+                "id": 7,
+                "localityName": "Sector 12"
+            },
+            {
+                "id": 8,
+                "localityName": "Sector 14"
+            },
+            {
+                "id": 9,
+                "localityName": "Sector 15"
+            },
+            {
+                "id": 10,
+                "localityName": "Sector 16"
+            },
+            {
+                "id": 11,
+                "localityName": "Sector 17"
+            },
+            {
+                "id": 12,
+                "localityName": "Sector 18"
+            },
+            {
+                "id": 13,
+                "localityName": "Sector 19"
+            },
+            {
+                "id": 14,
+                "localityName": "Sector 21"
+            },
+            {
+                "id": 15,
+                "localityName": "Sector 22"
+            },
+            {
+                "id": 16,
+                "localityName": "Sector 23"
+            },
+            {
+                "id": 17,
+                "localityName": "Sector 24"
+            },
+            {
+                "id": 18,
+                "localityName": "Sector 25"
+            },
+            {
+                "id": 19,
+                "localityName": "Sector 27"
+            },
+            {
+                "id": 20,
+                "localityName": "Sector 28"
+            },
+            {
+                "id": 21,
+                "localityName": "Sector 70"
+            },
+            {
+                "id": 22,
+                "localityName": "Sector 71"
+            },
+            {
+                "id": 23,
+                "localityName": "Sector 72"
+            },
+            {
+                "id": 24,
+                "localityName": "Sector 73"
+            },
+            {
+                "id": 25,
+                "localityName": "Sector 74"
+            },
+            {
+                "id": 26,
+                "localityName": "Sector 75"
+            },
+            {
+                "id": 27,
+                "localityName": "Sector 76"
+            },
+            {
+                "id": 28,
+                "localityName": "Sector 77"
+            },
+            {
+                "id": 29,
+                "localityName": "Sector 78"
+            },
+            {
+                "id": 30,
+                "localityName": "Sector 79"
+            },
+            {
+                "id": 31,
+                "localityName": "Sector 80"
+            },
+            {
+                "id": 32,
+                "localityName": "Sector 81"
+            },
+            {
+                "id": 33,
+                "localityName": "Sector 82"
+            },
+            {
+                "id": 34,
+                "localityName": "Sector 83"
+            },
+            {
+                "id": 35,
+                "localityName": "Sector 84"
+            },
+            {
+                "id": 36,
+                "localityName": "Sector 85"
+            },
+            {
+                "id": 37,
+                "localityName": "Sector 86"
+            },
+            {
+                "id": 38,
+                "localityName": "Sector 87"
+            },
+            {
+                "id": 39,
+                "localityName": "Sector 88"
+            },
+            {
+                "id": 40,
+                "localityName": "Sector 89"
+            },
+            {
+                "id": 41,
+                "localityName": "Sector 27A"
+            },
+            {
+                "id": 42,
+                "localityName": "Sector 31"
+            },
+            {
+                "id": 43,
+                "localityName": "Sector 32"
+            },
+            {
+                "id": 44,
+                "localityName": "Sector 33"
+            },
+            {
+                "id": 45,
+                "localityName": "Sector 34"
+            },
+            {
+                "id": 46,
+                "localityName": "Sector 35"
+            },
+            {
+                "id": 47,
+                "localityName": "Sector 36"
+            },
+            {
+                "id": 48,
+                "localityName": "Sector 37"
+            },
+            {
+                "id": 49,
+                "localityName": "Sector 43"
+            },
+            {
+                "id": 50,
+                "localityName": "Sector 44"
+            },
+            {
+                "id": 51,
+                "localityName": "Sector 45"
+            },
+            {
+                "id": 52,
+                "localityName": "Sector 46"
+            },
+            {
+                "id": 53,
+                "localityName": "Sector 47"
+            },
+            {
+                "id": 54,
+                "localityName": "Sector 48"
+            },
+            {
+                "id": 55,
+                "localityName": "Sector 49"
+            },
+            {
+                "id": 56,
+                "localityName": "Sector 2"
+            },
+            {
+                "id": 57,
+                "localityName": "Sector 3"
+            },
+            {
+                "id": 58,
+                "localityName": "Sector 4"
+            },
+            {
+                "id": 59,
+                "localityName": "Sector 5"
+            },
+            {
+                "id": 60,
+                "localityName": "Sector 6"
+            },
+            {
+                "id": 61,
+                "localityName": "Sector 7A"
+            },
+            {
+                "id": 62,
+                "localityName": "Sector 64"
+            },
+            {
+                "id": 63,
+                "localityName": "Sector 65"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "stateId": 1,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Ghaziabad – The Gateway to Uttar Pradesh & Industrial Powerhouse",
+        "metaKeywords": " Ghaziabad, industrial hub, real estate in Ghaziabad, Ghaziabad development, NCR cities, Ghaziabad tourism, industries in Ghaziabad, Ghaziabad infrastructure, business hub, Ghaziabad metro.",
+        "metaDescription": "Explore Ghaziabad, a fast-growing city near Delhi, known for its booming industries, modern infrastructure, real estate, and excellent connectivity as the gateway to Uttar Pradesh.",
+        "cityName": "Ghaziabad",
+        "stateName": "Uttar Pradesh",
+        "countryName": "India",
+        "cityDescription": "Ghaziabad, often called the \"Gateway to Uttar Pradesh,\" is a major industrial and residential city in the National Capital Region (NCR). Known for its rapid urban development, it hosts a wide range of industries, including steel, electronics, and manufacturing. The city is also a growing real estate hub, offering modern housing, shopping complexes, and commercial centers. With excellent connectivity via highways, railways, and the Delhi Metro, Ghaziabad is a key economic and infrastructural hub, balancing industrial growth with urban expansion.",
+        "cityImage": null,
+        "slugURL": "ghaziabad",
+        "projectList": null,
+        "localities": [
+            {
+                "id": 64,
+                "localityName": "Nehru Nagar"
+            },
+            {
+                "id": 65,
+                "localityName": "Raj Nagar"
+            },
+            {
+                "id": 66,
+                "localityName": "Raj Nagar Extension"
+            },
+            {
+                "id": 67,
+                "localityName": "Kavi Nagar"
+            },
+            {
+                "id": 68,
+                "localityName": "Govindpuram"
+            },
+            {
+                "id": 69,
+                "localityName": "Shastri Nagar"
+            },
+            {
+                "id": 70,
+                "localityName": "Lohia Nagar"
+            },
+            {
+                "id": 71,
+                "localityName": "Patel Nagar"
+            },
+            {
+                "id": 72,
+                "localityName": "Indirapuram"
+            },
+            {
+                "id": 73,
+                "localityName": "Vaibhav Khand"
+            },
+            {
+                "id": 74,
+                "localityName": "Aditya Mega City"
+            },
+            {
+                "id": 75,
+                "localityName": "Shipra Suncity"
+            },
+            {
+                "id": 76,
+                "localityName": "Vasundhara Sector 1"
+            },
+            {
+                "id": 77,
+                "localityName": "Vasundhara Sector 2"
+            },
+            {
+                "id": 78,
+                "localityName": "Vasundhara Sector 3"
+            },
+            {
+                "id": 79,
+                "localityName": "Vasundhara Sector 4"
+            },
+            {
+                "id": 80,
+                "localityName": "Vasundhara Sector 5"
+            },
+            {
+                "id": 81,
+                "localityName": "Vasundhara Sector 6"
+            },
+            {
+                "id": 82,
+                "localityName": "Vasundhara Sector 7"
+            },
+            {
+                "id": 83,
+                "localityName": "Vasundhara Sector 8"
+            },
+            {
+                "id": 84,
+                "localityName": "Vasundhara Sector 9"
+            },
+            {
+                "id": 85,
+                "localityName": "Vasundhara Sector 10"
+            },
+            {
+                "id": 86,
+                "localityName": "Vasundhara Sector 11"
+            },
+            {
+                "id": 87,
+                "localityName": "Vasundhara Sector 12"
+            },
+            {
+                "id": 88,
+                "localityName": "Vasundhara Sector 13"
+            },
+            {
+                "id": 89,
+                "localityName": "Vasundhara Sector 14"
+            },
+            {
+                "id": 90,
+                "localityName": "Vasundhara Sector 15"
+            },
+            {
+                "id": 91,
+                "localityName": "Vasundhara Sector 16"
+            },
+            {
+                "id": 92,
+                "localityName": "Crossings Republik"
+            },
+            {
+                "id": 93,
+                "localityName": "Siddharth Vihar"
+            },
+            {
+                "id": 94,
+                "localityName": "Pratap Vihar"
+            },
+            {
+                "id": 95,
+                "localityName": "Mahurali"
+            },
+            {
+                "id": 96,
+                "localityName": "Wave City"
+            },
+            {
+                "id": 97,
+                "localityName": "Modinagar"
+            },
+            {
+                "id": 98,
+                "localityName": "Muradnagar"
+            },
+            {
+                "id": 99,
+                "localityName": "Niwaru Road Area"
+            }
+        ]
+    },
+    {
+        "id": 41,
+        "stateId": 16,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Goa Tourism | Beaches, Culture, Nightlife & Travel Guide",
+        "metaKeywords": "Goa tourism, beaches in Goa, Goa travel guide, things to do in Goa, nightlife in Goa, Goa attractions, Portuguese heritage Goa, Goa vacation, best places in Goa, Goa real estate",
+        "metaDescription": "Explore Goa, India’s top coastal destination known for its sun-kissed beaches, vibrant nightlife, Portuguese heritage, and scenic landscapes. Discover travel tips, attractions, festivals, and investment opportunities in Goa.",
+        "cityName": "Goa",
+        "stateName": "Goa",
+        "countryName": "India",
+        "cityDescription": "Goa is a vibrant coastal city known for its pristine beaches, Portuguese-influenced architecture, lively nightlife, rich culture, and tropical charm, making it a favorite for tourists and investors alike.",
+        "cityImage": null,
+        "slugURL": "goa",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 26,
+        "stateId": 1,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Buy Property in Greater Noida | Top Residential & Commercial Projects",
+        "metaKeywords": "Greater Noida, Greater Noida city, Greater Noida NCR, smart city Greater Noida, about Greater Noida, property in Greater Noida, Greater Noida real estate, flats in Greater Noida, apartments in Greater Noida, villas in Greater Noida, plots in Greater Noida, residential projects in Greater Noida, commercial property in Greater Noida, affordable housing in Greater Noida, places to visit in Greater Noida, things to do in Greater Noida, Greater Noida hotels, Greater Noida tourism, entertainment in Greater Noida, shopping malls in Greater Noida.",
+        "metaDescription": "Explore real estate in Greater Noida – affordable flats, plots, villas, and commercial properties in a rapidly growing smart city of NCR.",
+        "cityName": "Greater Noida",
+        "stateName": "Uttar Pradesh",
+        "countryName": "India",
+        "cityDescription": "Greater Noida is a modern, well-planned city in the National Capital Region (NCR) of India, known for its wide roads, green spaces, and rapid development. It has become a hub for real estate, education, and industry, with top universities, IT parks, and commercial zones. Excellent connectivity via the Yamuna Expressway and the upcoming Noida International Airport makes it a prime destination for residents, investors, and businesses alike.",
+        "cityImage": null,
+        "slugURL": "greater-noida",
+        "projectList": null,
+        "localities": [
+            {
+                "id": 175,
+                "localityName": "Alpha 1"
+            },
+            {
+                "id": 176,
+                "localityName": "Alpha 2"
+            },
+            {
+                "id": 177,
+                "localityName": "Beta 1"
+            },
+            {
+                "id": 178,
+                "localityName": "Beta 2"
+            },
+            {
+                "id": 179,
+                "localityName": "Gamma 1"
+            },
+            {
+                "id": 180,
+                "localityName": "Gamma 2"
+            },
+            {
+                "id": 181,
+                "localityName": "Delta 1"
+            },
+            {
+                "id": 182,
+                "localityName": "Delta 2"
+            },
+            {
+                "id": 183,
+                "localityName": "Swarn Nagari"
+            },
+            {
+                "id": 184,
+                "localityName": "Sector 1"
+            },
+            {
+                "id": 185,
+                "localityName": "Sector 2"
+            },
+            {
+                "id": 186,
+                "localityName": "Sector 3"
+            },
+            {
+                "id": 187,
+                "localityName": "Sector 4"
+            },
+            {
+                "id": 188,
+                "localityName": "Sector 16"
+            },
+            {
+                "id": 189,
+                "localityName": "Sector 16B"
+            },
+            {
+                "id": 190,
+                "localityName": "Tech Zone 4"
+            },
+            {
+                "id": 191,
+                "localityName": "Gaur City 1"
+            },
+            {
+                "id": 192,
+                "localityName": "Gaur City 2"
+            },
+            {
+                "id": 193,
+                "localityName": "Knowledge Park 1"
+            },
+            {
+                "id": 194,
+                "localityName": "Knowledge Park 2"
+            },
+            {
+                "id": 195,
+                "localityName": "Knowledge Park 3"
+            },
+            {
+                "id": 196,
+                "localityName": "Knowledge Park 4"
+            },
+            {
+                "id": 197,
+                "localityName": "Knowledge Park 5"
+            },
+            {
+                "id": 198,
+                "localityName": "Sector 18"
+            },
+            {
+                "id": 199,
+                "localityName": "Sector 20"
+            },
+            {
+                "id": 200,
+                "localityName": "Sector 21"
+            },
+            {
+                "id": 201,
+                "localityName": "Sector 22"
+            },
+            {
+                "id": 202,
+                "localityName": "Sector 24"
+            },
+            {
+                "id": 203,
+                "localityName": "Sector 25"
+            }
+        ]
+    },
+    {
+        "id": 52,
+        "stateId": 5,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": null,
+        "metaKeywords": null,
+        "metaDescription": null,
+        "cityName": "Gurgaon",
+        "stateName": "Haryana",
+        "countryName": "India",
+        "cityDescription": null,
+        "cityImage": null,
+        "slugURL": "gurgaon",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 17,
+        "stateId": 5,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Gurugram (Gurgaon) – India’s Thriving Tech & Business Hub",
+        "metaKeywords": "Gurugram, Gurgaon, tech hub India, business hub India, corporate offices, MNCs in Gurugram, IT companies in Gurgaon, shopping malls in Gurugram, Gurgaon real estate, Gurugram tourism, startups in Gurugram.",
+        "metaDescription": "Explore Gurugram, a leading financial and technology hub near Delhi, known for its skyscrapers, corporate offices, shopping malls, and modern infrastructure.",
+        "cityName": "Gurugram",
+        "stateName": "Haryana",
+        "countryName": "India",
+        "cityDescription": "Gurugram, formerly known as Gurgaon, is a major financial and technology hub in India, located in the state of Haryana near Delhi. Known for its modern infrastructure, skyscrapers, and corporate offices, it houses headquarters of several multinational companies and startups. The city is also home to shopping malls, entertainment centers, and luxury residential complexes. Despite rapid urbanization, Gurugram faces challenges like traffic congestion and pollution.",
+        "cityImage": null,
+        "slugURL": "gurugram",
+        "projectList": null,
+        "localities": [
+            {
+                "id": 100,
+                "localityName": "Sector 1"
+            },
+            {
+                "id": 101,
+                "localityName": "Sector 2"
+            },
+            {
+                "id": 102,
+                "localityName": "Sector 3"
+            },
+            {
+                "id": 103,
+                "localityName": "Sector 4"
+            },
+            {
+                "id": 104,
+                "localityName": "Sector 5"
+            },
+            {
+                "id": 105,
+                "localityName": "Sector 6"
+            },
+            {
+                "id": 106,
+                "localityName": "Sector 7"
+            },
+            {
+                "id": 107,
+                "localityName": "Sector 8"
+            },
+            {
+                "id": 108,
+                "localityName": "Sector 9"
+            },
+            {
+                "id": 109,
+                "localityName": "Sector 10"
+            },
+            {
+                "id": 110,
+                "localityName": "Sector 11"
+            },
+            {
+                "id": 111,
+                "localityName": "Sector 12"
+            },
+            {
+                "id": 112,
+                "localityName": "Sector 14"
+            },
+            {
+                "id": 113,
+                "localityName": "Sector 15"
+            },
+            {
+                "id": 114,
+                "localityName": "Sector 17"
+            },
+            {
+                "id": 115,
+                "localityName": "Sector 18"
+            },
+            {
+                "id": 116,
+                "localityName": "DLF Phase 1"
+            },
+            {
+                "id": 117,
+                "localityName": "DLF Phase 2"
+            },
+            {
+                "id": 118,
+                "localityName": "DLF Phase 3"
+            },
+            {
+                "id": 119,
+                "localityName": "DLF Phase 4"
+            },
+            {
+                "id": 120,
+                "localityName": "DLF Phase 5"
+            },
+            {
+                "id": 121,
+                "localityName": "Sector 42"
+            },
+            {
+                "id": 122,
+                "localityName": "Sector 43"
+            },
+            {
+                "id": 123,
+                "localityName": "Sector 53"
+            },
+            {
+                "id": 124,
+                "localityName": "Sector 54"
+            },
+            {
+                "id": 125,
+                "localityName": "Sector 57"
+            },
+            {
+                "id": 126,
+                "localityName": "Sector 58"
+            },
+            {
+                "id": 127,
+                "localityName": "Sector 59"
+            },
+            {
+                "id": 128,
+                "localityName": "Sector 60"
+            },
+            {
+                "id": 129,
+                "localityName": "Sector 61"
+            },
+            {
+                "id": 130,
+                "localityName": "Sector 62"
+            },
+            {
+                "id": 131,
+                "localityName": "Sector 63"
+            },
+            {
+                "id": 132,
+                "localityName": "Sector 64"
+            },
+            {
+                "id": 133,
+                "localityName": "Sector 65"
+            },
+            {
+                "id": 134,
+                "localityName": "Sector 66"
+            },
+            {
+                "id": 135,
+                "localityName": "Sector 67"
+            },
+            {
+                "id": 136,
+                "localityName": "Sector 38"
+            },
+            {
+                "id": 137,
+                "localityName": "Sector 46"
+            },
+            {
+                "id": 138,
+                "localityName": "Sector 47"
+            },
+            {
+                "id": 139,
+                "localityName": "Sector 48"
+            },
+            {
+                "id": 140,
+                "localityName": "Sector 49"
+            },
+            {
+                "id": 141,
+                "localityName": "Sector 50"
+            },
+            {
+                "id": 142,
+                "localityName": "Sector 51"
+            },
+            {
+                "id": 143,
+                "localityName": "Sector 52"
+            },
+            {
+                "id": 144,
+                "localityName": "Sector 102"
+            },
+            {
+                "id": 145,
+                "localityName": "Sector 103"
+            },
+            {
+                "id": 146,
+                "localityName": "Sector 104"
+            },
+            {
+                "id": 147,
+                "localityName": "Sector 106"
+            },
+            {
+                "id": 148,
+                "localityName": "Sector 108"
+            },
+            {
+                "id": 149,
+                "localityName": "Sector 109"
+            },
+            {
+                "id": 150,
+                "localityName": "Sector 110"
+            },
+            {
+                "id": 151,
+                "localityName": "Sector 111"
+            },
+            {
+                "id": 152,
+                "localityName": "Sector 112"
+            },
+            {
+                "id": 153,
+                "localityName": "Sector 113"
+            },
+            {
+                "id": 154,
+                "localityName": "Sector 114"
+            },
+            {
+                "id": 155,
+                "localityName": "Sector 115"
+            },
+            {
+                "id": 156,
+                "localityName": "Sector 33"
+            },
+            {
+                "id": 157,
+                "localityName": "Sector 34"
+            },
+            {
+                "id": 158,
+                "localityName": "Sector 37"
+            },
+            {
+                "id": 159,
+                "localityName": "Sector 37C"
+            },
+            {
+                "id": 160,
+                "localityName": "Palam Vihar"
+            },
+            {
+                "id": 161,
+                "localityName": "Sector 21"
+            },
+            {
+                "id": 162,
+                "localityName": "Sector 22"
+            },
+            {
+                "id": 163,
+                "localityName": "Sector 23"
+            },
+            {
+                "id": 164,
+                "localityName": "Sector 81"
+            },
+            {
+                "id": 165,
+                "localityName": "Sector 82"
+            },
+            {
+                "id": 166,
+                "localityName": "Sector 83"
+            },
+            {
+                "id": 167,
+                "localityName": "Sector 84"
+            },
+            {
+                "id": 168,
+                "localityName": "Sector 85"
+            },
+            {
+                "id": 169,
+                "localityName": "Sector 86"
+            },
+            {
+                "id": 170,
+                "localityName": "Sector 90"
+            },
+            {
+                "id": 171,
+                "localityName": "Sector 91"
+            },
+            {
+                "id": 172,
+                "localityName": "Sector 92"
+            },
+            {
+                "id": 173,
+                "localityName": "Sector 93"
+            },
+            {
+                "id": 174,
+                "localityName": "Sector 95"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "stateId": 9,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Explore Hyderabad - City of Nizams | Heritage, Cuisine & Tech Hub",
+        "metaKeywords": "Hyderabad tourism, places to visit in Hyderabad, City of Nizams, Hyderabad travel guide, Hyderabad heritage, Charminar, Hyderabad biryani, tech city India, things to do in Hyderabad, Hyderabad IT hub",
+        "metaDescription": "Discover Hyderabad, the City of Nizams, where ancient heritage meets modern innovation. Explore majestic forts, biryani culture, IT hubs, and vibrant city life.",
+        "cityName": "Hyderabad",
+        "stateName": "Telangana",
+        "countryName": "India",
+        "cityDescription": "Hyderabad, the capital of Telangana, is a city that seamlessly blends rich Mughal-era heritage with modern urban development. Known as the City of Nizams, Hyderabad boasts stunning architecture, vibrant bazaars, and world-famous Hyderabadi biryani.\n\nLandmarks like the iconic Charminar, Golconda Fort, Chowmahalla Palace, and Mecca Masjid highlight the city’s royal past, while modern attractions such as HITEC City, Ramoji Film City, and upscale shopping malls showcase its cosmopolitan vibe.\n\nHyderabad is also a major IT and startup hub, housing global tech giants and a thriving business ecosystem. Its unique fusion of heritage, technology, culture, and cuisine makes it one of India’s most dynamic and livable cities.\n\nWhether you're a history enthusiast, tech professional, foodie, or traveler, Hyderabad offers a rich and fulfilling experience.",
+        "cityImage": null,
+        "slugURL": "hyderabad",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 38,
+        "stateId": 15,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Indore – Cleanest City of India | History, Culture & Economy",
+        "metaKeywords": "Indore, Indore city, cleanest city in India, Indore tourism, Indore culture, Indore history, Indore food, Indore economy, Madhya Pradesh cities",
+        "metaDescription": "Explore Indore, the cleanest city in India, known for its rich history, vibrant street food, industrial growth, and cultural heritage.",
+        "cityName": "Indore",
+        "stateName": "Madhya Pradesh",
+        "countryName": "India",
+        "cityDescription": "Indore, the commercial capital of Madhya Pradesh, is renowned for its cleanliness, vibrant food culture, and historical charm. A hub for education and industry, it blends modern development with rich heritage, attracting tourists, students, and entrepreneurs alike.",
+        "cityImage": null,
+        "slugURL": "indore",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 19,
+        "stateId": 7,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Explore Jaipur - The Pink City of India | Heritage, Culture & Travel",
+        "metaKeywords": "Jaipur tourism, Pink City India, places to visit in Jaipur, Jaipur travel guide, Rajasthani culture, Jaipur forts, Jaipur palaces, shopping in Jaipur, things to do in Jaipur, Jaipur heritage",
+        "metaDescription": "Discover Jaipur, the Pink City of India, known for its royal heritage, majestic forts, vibrant markets, and rich Rajasthani culture. Plan your perfect trip now.",
+        "cityName": "Jaipur",
+        "stateName": "Rajasthan",
+        "countryName": "India",
+        "cityDescription": "Jaipur, the capital city of Rajasthan, is famously known as the Pink City for its stunning terracotta-colored architecture. A vibrant blend of royal history, colorful culture, and architectural marvels, Jaipur is one of India's most iconic travel destinations.\n\nThe city is home to majestic landmarks such as the Amber Fort, City Palace, Hawa Mahal, and Jantar Mantar, a UNESCO World Heritage Site. Jaipur's old city is a bustling maze of markets offering handcrafted jewelry, traditional textiles, blue pottery, and delicious Rajasthani cuisine.\n\nKnown for its heritage hotels, cultural festivals, and artisanal craftsmanship, Jaipur offers visitors a royal experience steeped in tradition and charm. Whether you're a history buff, a shopper, or a foodie, Jaipur promises an unforgettable journey into India’s regal past.\n\n",
+        "cityImage": null,
+        "slugURL": "jaipur",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 48,
+        "stateId": 5,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Karnal | History of Haryana, Culture & Attractions",
+        "metaKeywords": "Karnal, Karnal Haryana, Haryana cities, Karnal history, Karnal tourism, places to visit in Karnal, Karnal culture, Karnal attractions, Karnal travel guide, Haryana travel",
+        "metaDescription": "Discover Karnal, a historic city in Haryana known for its rich heritage, educational institutions, cultural landmarks, and strategic location. Explore local attractions, cuisine, and modern amenities while experiencing the charm of this vibrant city.",
+        "cityName": "Karnal",
+        "stateName": "Haryana",
+        "countryName": "India",
+        "cityDescription": "Karnal, in Haryana, is a historic city known for its rich culture, educational institutions, and modern amenities. Well-connected to Delhi, it serves as a key hub for commerce and tourism.",
+        "cityImage": null,
+        "slugURL": "karnal",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 20,
+        "stateId": 8,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Explore Kochi - Queen of the Arabian Sea | Culture, Backwaters & Travel",
+        "metaKeywords": "Kochi tourism, places to visit in Kochi, Kochi travel guide, Queen of the Arabian Sea, Kochi backwaters, Fort Kochi, Kerala culture, Kochi attractions, things to do in Kochi, Kochi heritage",
+        "metaDescription": "Discover Kochi, the Queen of the Arabian Sea, known for its scenic backwaters, colonial heritage, vibrant culture, and coastal charm. Plan your Kochi experience today.",
+        "cityName": "Kochi",
+        "stateName": "Kerala",
+        "countryName": "India",
+        "cityDescription": "Kochi, also known as Cochin, is a vibrant port city on the southwest coast of India in the state of Kerala. Often referred to as the Queen of the Arabian Sea, Kochi is a melting pot of cultures, showcasing a beautiful blend of Portuguese, Dutch, British, and traditional Kerala influences.\n\nThe city is famous for its scenic backwaters, historical sites like Fort Kochi, Mattancherry Palace, Jew Town, and the iconic Chinese fishing nets. Kochi is also a gateway to the serene Alleppey backwaters and the lush hill stations of Munnar.\n\nKnown for its art scene, Ayurvedic retreats, delicious seafood, and the Kochi-Muziris Biennale, the city offers a rich cultural experience that attracts both domestic and international travelers. Whether you're seeking history, nature, or coastal relaxation, Kochi delivers it all with timeless charm.",
+        "cityImage": null,
+        "slugURL": "kochi",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 31,
+        "stateId": 1,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Real Estate Projects & Property Investment in Lucknow City",
+        "metaKeywords": "Real Estate in Lucknow, Flats in Lucknow, Property in Lucknow, Apartments in Lucknow, Sushant Golf City, Rishita Serenity Lucknow, 2 BHK in Lucknow, 3 BHK Flats Lucknow, Luxury Homes Lucknow, Residential Projects in Lucknow, Buy Property in Lucknow, Investment in Lucknow Real Estate, Premium Apartments in Lucknow",
+        "metaDescription": "Discover top real estate projects, premium apartments, and investment opportunities in Lucknow – a city rich in culture, growth, and smart infrastructure.",
+        "cityName": "Lucknow",
+        "stateName": "Uttar Pradesh",
+        "countryName": "India",
+        "cityDescription": "Lucknow, the capital of Uttar Pradesh, is a fast-growing metropolitan city blending heritage with modern infrastructure. Known as the \"City of Nawabs,\" Lucknow is famous for its rich culture, historical monuments, and vibrant culinary scene. In recent years, it has emerged as a top destination for real estate investment due to its expanding metro network, smart city projects, and planned townships like Sushant Golf City. With reputed schools, hospitals, IT parks, and seamless connectivity to major highways and the airport, Lucknow offers a balanced lifestyle. Whether you're looking for luxury residences or affordable housing, Lucknow caters to every segment of buyers and investors.",
+        "cityImage": null,
+        "slugURL": "lucknow",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 6,
+        "stateId": 2,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Ludhiana – The Industrial & Textile Hub of India",
+        "metaKeywords": " Ludhiana, Punjab industrial city, textile industry in Ludhiana, manufacturing hub India, hosiery market, Ludhiana tourism, Punjabi culture, business in Ludhiana, agriculture in Punjab, shopping in Ludhiana.",
+        "metaDescription": "Discover Ludhiana, Punjab’s largest city, known for its thriving textile and manufacturing industries, rich culture, delicious Punjabi cuisine, and vibrant markets.",
+        "cityName": "Ludhiana",
+        "stateName": "Punjab",
+        "countryName": "India",
+        "cityDescription": "Ludhiana, the largest city in Punjab, is known as the \"Manchester of India\" due to its booming textile and hosiery industry. A major manufacturing and industrial hub, Ludhiana contributes significantly to India's economy, particularly in the production of auto parts, machinery, and garments. The city is also rich in Punjabi culture, offering vibrant markets, delicious local cuisine, and historic sites like Lodhi Fort and Punjab Agricultural University. With its blend of business opportunities, education institutions, and cultural heritage, Ludhiana remains one of North India's most dynamic cities.",
+        "cityImage": null,
+        "slugURL": "ludhiana",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 50,
+        "stateId": 1,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Meerut | Real Estate, History, Education & City Guide",
+        "metaKeywords": "Meerut, Meerut Uttar Pradesh, Meerut city guide, real estate in Meerut, property in Meerut, Meerut history, Meerut education, Meerut sports industry, places to visit in Meerut, Meerut development, cities near Delhi NCR",
+        "metaDescription": "Explore Meerut, a historic city in Uttar Pradesh known for its real estate growth, educational institutions, sports industry, and rich cultural heritage near Delhi NCR.",
+        "cityName": "Meerut",
+        "stateName": "Uttar Pradesh",
+        "countryName": "India",
+        "cityDescription": "Meerut is one of the oldest and most historically significant cities in Uttar Pradesh, located in the National Capital Region (NCR). Known for its pivotal role in the Indian Rebellion of 1857, the city blends rich heritage with modern urban development.",
+        "cityImage": null,
+        "slugURL": "meerut",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 42,
+        "stateId": 2,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Mohali | A Modern City in Punjab with Growing Infrastructure & Opportunities",
+        "metaKeywords": "Mohali, City in Punjab, Mohali Real Estate, Mohali IT Hub, Mohali Tourism, Chandigarh Mohali, Mohali Development, Mohali Property, Mohali Education",
+        "metaDescription": "Discover Mohali – a thriving city in Punjab known for its modern infrastructure, IT parks, sports facilities, educational institutions, and excellent connectivity to Chandigarh.",
+        "cityName": "Mohali",
+        "stateName": "Punjab",
+        "countryName": "India",
+        "cityDescription": "Mohali is a rapidly developing city in Punjab, known for its modern infrastructure, IT hubs, educational institutions, sports facilities, and seamless connectivity to Chandigarh, making it a prime urban destination.",
+        "cityImage": null,
+        "slugURL": "mohali",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 14,
+        "stateId": 3,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Mumbai | Maharashtra",
+        "metaKeywords": "Mumbai | Properties, Flats & Real Estate",
+        "metaDescription": "Mumbai, the financial capital of India, is a bustling metropolis known for its vibrant culture, historic landmarks, and Bollywood film industry. Situated along the Arabian Sea, the city boasts iconic attractions like the Gateway of India, Marine Drive, and Elephanta Caves. Mumbai is a melting pot of traditions, offering diverse cuisine, shopping hubs, and a fast-paced lifestyle.",
+        "cityName": "Mumbai",
+        "stateName": "Maharashtra",
+        "countryName": "India",
+        "cityDescription": "Mumbai, the financial capital of India, is a bustling metropolis known for its vibrant culture, historic landmarks, and Bollywood film industry. Situated along the Arabian Sea, the city boasts iconic attractions like the Gateway of India, Marine Drive, and Elephanta Caves. Mumbai is a melting pot of traditions, offering diverse cuisine, shopping hubs, and a fast-paced lifestyle.",
+        "cityImage": null,
+        "slugURL": "mumbai",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 2,
+        "stateId": 1,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Noida – A Thriving IT & Industrial Hub Near Delhi",
+        "metaKeywords": "Noida, IT hub India, Noida business center, corporate offices in Noida, startups in Noida, Noida real estate, shopping malls in Noida, Noida tourism, Greater Noida, industries in Noida.",
+        "metaDescription": "Explore Noida, a modern city known for its IT parks, corporate hubs, shopping malls, and world-class infrastructure. A prime destination for businesses, startups, and entertainment.",
+        "cityName": "Noida",
+        "stateName": "Uttar Pradesh",
+        "countryName": "India",
+        "cityDescription": "Noida (New Okhla Industrial Development Authority) is a rapidly growing city in Uttar Pradesh, part of the National Capital Region (NCR) of India. Known for its modern infrastructure, Noida is a leading IT and business hub, hosting numerous multinational companies, startups, and industrial zones. The city is also home to top educational institutions, high-end residential complexes, shopping malls, and entertainment centers like Worlds of Wonder and Film City. With well-planned roads, metro connectivity, and green spaces, Noida offers a high standard of living. It continues to attract professionals, businesses, and investors, making it one of the most dynamic cities in India.",
+        "cityImage": null,
+        "slugURL": "noida",
+        "projectList": null,
+        "localities": [
+            {
+                "id": 1,
+                "localityName": "Sector 142"
+            },
+            {
+                "id": 224,
+                "localityName": "Sector 1"
+            },
+            {
+                "id": 225,
+                "localityName": "Sector 2"
+            },
+            {
+                "id": 226,
+                "localityName": "Sector 3"
+            },
+            {
+                "id": 227,
+                "localityName": "Sector 4"
+            },
+            {
+                "id": 228,
+                "localityName": "Sector 5"
+            },
+            {
+                "id": 229,
+                "localityName": "Sector 6"
+            },
+            {
+                "id": 230,
+                "localityName": "Sector 7"
+            },
+            {
+                "id": 231,
+                "localityName": "Sector 8"
+            },
+            {
+                "id": 232,
+                "localityName": "Sector 9"
+            },
+            {
+                "id": 233,
+                "localityName": "Sector 10"
+            },
+            {
+                "id": 234,
+                "localityName": "Sector 11"
+            },
+            {
+                "id": 235,
+                "localityName": "Sector 12"
+            },
+            {
+                "id": 236,
+                "localityName": "Sector 13"
+            },
+            {
+                "id": 237,
+                "localityName": "Sector 14"
+            },
+            {
+                "id": 238,
+                "localityName": "Sector 15"
+            },
+            {
+                "id": 239,
+                "localityName": "Sector 16"
+            },
+            {
+                "id": 240,
+                "localityName": "Sector 17"
+            },
+            {
+                "id": 241,
+                "localityName": "Sector 18"
+            },
+            {
+                "id": 242,
+                "localityName": "Sector 19"
+            },
+            {
+                "id": 243,
+                "localityName": "Sector 20"
+            },
+            {
+                "id": 244,
+                "localityName": "Sector 21"
+            },
+            {
+                "id": 245,
+                "localityName": "Sector 22"
+            },
+            {
+                "id": 246,
+                "localityName": "Sector 23"
+            },
+            {
+                "id": 247,
+                "localityName": "Sector 24"
+            },
+            {
+                "id": 248,
+                "localityName": "Sector 25"
+            },
+            {
+                "id": 249,
+                "localityName": "Sector 26"
+            },
+            {
+                "id": 250,
+                "localityName": "Sector 27"
+            },
+            {
+                "id": 251,
+                "localityName": "Sector 28"
+            },
+            {
+                "id": 252,
+                "localityName": "Sector 29"
+            },
+            {
+                "id": 253,
+                "localityName": "Sector 30"
+            },
+            {
+                "id": 254,
+                "localityName": "Sector 31"
+            },
+            {
+                "id": 255,
+                "localityName": "Sector 32"
+            },
+            {
+                "id": 256,
+                "localityName": "Sector 33"
+            },
+            {
+                "id": 257,
+                "localityName": "Sector 34"
+            },
+            {
+                "id": 258,
+                "localityName": "Sector 35"
+            },
+            {
+                "id": 259,
+                "localityName": "Sector 36"
+            },
+            {
+                "id": 260,
+                "localityName": "Sector 37"
+            },
+            {
+                "id": 261,
+                "localityName": "Sector 38"
+            },
+            {
+                "id": 262,
+                "localityName": "Sector 39"
+            },
+            {
+                "id": 263,
+                "localityName": "Sector 40"
+            },
+            {
+                "id": 264,
+                "localityName": "Sector 41"
+            },
+            {
+                "id": 265,
+                "localityName": "Sector 42"
+            },
+            {
+                "id": 266,
+                "localityName": "Sector 43"
+            },
+            {
+                "id": 267,
+                "localityName": "Sector 44"
+            },
+            {
+                "id": 268,
+                "localityName": "Sector 45"
+            },
+            {
+                "id": 269,
+                "localityName": "Sector 46"
+            },
+            {
+                "id": 270,
+                "localityName": "Sector 47"
+            },
+            {
+                "id": 271,
+                "localityName": "Sector 48"
+            },
+            {
+                "id": 272,
+                "localityName": "Sector 49"
+            },
+            {
+                "id": 273,
+                "localityName": "Sector 50"
+            },
+            {
+                "id": 274,
+                "localityName": "Sector 51"
+            },
+            {
+                "id": 275,
+                "localityName": "Sector 52"
+            },
+            {
+                "id": 276,
+                "localityName": "Sector 53"
+            },
+            {
+                "id": 277,
+                "localityName": "Sector 54"
+            },
+            {
+                "id": 278,
+                "localityName": "Sector 55"
+            },
+            {
+                "id": 279,
+                "localityName": "Sector 56"
+            },
+            {
+                "id": 280,
+                "localityName": "Sector 57"
+            },
+            {
+                "id": 281,
+                "localityName": "Sector 58"
+            },
+            {
+                "id": 282,
+                "localityName": "Sector 59"
+            },
+            {
+                "id": 283,
+                "localityName": "Sector 60"
+            },
+            {
+                "id": 284,
+                "localityName": "Sector 61"
+            },
+            {
+                "id": 285,
+                "localityName": "Sector 62"
+            },
+            {
+                "id": 286,
+                "localityName": "Sector 63"
+            },
+            {
+                "id": 287,
+                "localityName": "Sector 64"
+            },
+            {
+                "id": 288,
+                "localityName": "Sector 65"
+            },
+            {
+                "id": 289,
+                "localityName": "Sector 66"
+            },
+            {
+                "id": 290,
+                "localityName": "Sector 67"
+            },
+            {
+                "id": 291,
+                "localityName": "Sector 68"
+            },
+            {
+                "id": 292,
+                "localityName": "Sector 69"
+            },
+            {
+                "id": 293,
+                "localityName": "Sector 70"
+            },
+            {
+                "id": 294,
+                "localityName": "Sector 71"
+            },
+            {
+                "id": 295,
+                "localityName": "Sector 72"
+            },
+            {
+                "id": 296,
+                "localityName": "Sector 73"
+            },
+            {
+                "id": 297,
+                "localityName": "Sector 74"
+            },
+            {
+                "id": 298,
+                "localityName": "Sector 75"
+            },
+            {
+                "id": 299,
+                "localityName": "Sector 76"
+            },
+            {
+                "id": 300,
+                "localityName": "Sector 77"
+            },
+            {
+                "id": 301,
+                "localityName": "Sector 78"
+            },
+            {
+                "id": 302,
+                "localityName": "Sector 79"
+            },
+            {
+                "id": 303,
+                "localityName": "Sector 80"
+            },
+            {
+                "id": 304,
+                "localityName": "Sector 81"
+            },
+            {
+                "id": 305,
+                "localityName": "Sector 82"
+            },
+            {
+                "id": 306,
+                "localityName": "Sector 83"
+            },
+            {
+                "id": 307,
+                "localityName": "Sector 84"
+            },
+            {
+                "id": 308,
+                "localityName": "Sector 85"
+            },
+            {
+                "id": 309,
+                "localityName": "Sector 86"
+            },
+            {
+                "id": 310,
+                "localityName": "Sector 87"
+            },
+            {
+                "id": 311,
+                "localityName": "Sector 88"
+            },
+            {
+                "id": 312,
+                "localityName": "Sector 89"
+            },
+            {
+                "id": 313,
+                "localityName": "Sector 90"
+            },
+            {
+                "id": 314,
+                "localityName": "Sector 91"
+            },
+            {
+                "id": 315,
+                "localityName": "Sector 92"
+            },
+            {
+                "id": 316,
+                "localityName": "Sector 93"
+            },
+            {
+                "id": 317,
+                "localityName": "Sector 94"
+            },
+            {
+                "id": 318,
+                "localityName": "Sector 95"
+            },
+            {
+                "id": 319,
+                "localityName": "Sector 96"
+            },
+            {
+                "id": 320,
+                "localityName": "Sector 97"
+            },
+            {
+                "id": 321,
+                "localityName": "Sector 98"
+            },
+            {
+                "id": 322,
+                "localityName": "Sector 99"
+            },
+            {
+                "id": 323,
+                "localityName": "Sector 100"
+            },
+            {
+                "id": 324,
+                "localityName": "Sector 101"
+            },
+            {
+                "id": 325,
+                "localityName": "Sector 102"
+            },
+            {
+                "id": 326,
+                "localityName": "Sector 103"
+            },
+            {
+                "id": 327,
+                "localityName": "Sector 104"
+            },
+            {
+                "id": 328,
+                "localityName": "Sector 105"
+            },
+            {
+                "id": 329,
+                "localityName": "Sector 106"
+            },
+            {
+                "id": 330,
+                "localityName": "Sector 107"
+            },
+            {
+                "id": 331,
+                "localityName": "Sector 108"
+            },
+            {
+                "id": 332,
+                "localityName": "Sector 109"
+            },
+            {
+                "id": 333,
+                "localityName": "Sector 110"
+            },
+            {
+                "id": 334,
+                "localityName": "Sector 111"
+            },
+            {
+                "id": 335,
+                "localityName": "Sector 112"
+            },
+            {
+                "id": 336,
+                "localityName": "Sector 113"
+            },
+            {
+                "id": 337,
+                "localityName": "Sector 114"
+            },
+            {
+                "id": 338,
+                "localityName": "Sector 115"
+            },
+            {
+                "id": 339,
+                "localityName": "Sector 116"
+            },
+            {
+                "id": 340,
+                "localityName": "Sector 117"
+            },
+            {
+                "id": 341,
+                "localityName": "Sector 118"
+            },
+            {
+                "id": 342,
+                "localityName": "Sector 119"
+            },
+            {
+                "id": 343,
+                "localityName": "Sector 120"
+            },
+            {
+                "id": 344,
+                "localityName": "Sector 121"
+            },
+            {
+                "id": 345,
+                "localityName": "Sector 122"
+            },
+            {
+                "id": 346,
+                "localityName": "Sector 123"
+            },
+            {
+                "id": 347,
+                "localityName": "Sector 124"
+            },
+            {
+                "id": 348,
+                "localityName": "Sector 125"
+            },
+            {
+                "id": 349,
+                "localityName": "Sector 126"
+            },
+            {
+                "id": 350,
+                "localityName": "Sector 127"
+            },
+            {
+                "id": 351,
+                "localityName": "Sector 128"
+            },
+            {
+                "id": 352,
+                "localityName": "Sector 129"
+            },
+            {
+                "id": 353,
+                "localityName": "Sector 130"
+            },
+            {
+                "id": 354,
+                "localityName": "Sector 131"
+            },
+            {
+                "id": 355,
+                "localityName": "Sector 132"
+            },
+            {
+                "id": 356,
+                "localityName": "Sector 133"
+            },
+            {
+                "id": 357,
+                "localityName": "Sector 134"
+            },
+            {
+                "id": 358,
+                "localityName": "Sector 135"
+            },
+            {
+                "id": 359,
+                "localityName": "Sector 136"
+            },
+            {
+                "id": 360,
+                "localityName": "Sector 137"
+            },
+            {
+                "id": 361,
+                "localityName": "Sector 138"
+            },
+            {
+                "id": 362,
+                "localityName": "Sector 139"
+            },
+            {
+                "id": 363,
+                "localityName": "Sector 140"
+            },
+            {
+                "id": 364,
+                "localityName": "Sector 141"
+            },
+            {
+                "id": 365,
+                "localityName": "Sector 142"
+            },
+            {
+                "id": 366,
+                "localityName": "Sector 143"
+            },
+            {
+                "id": 367,
+                "localityName": "Sector 144"
+            },
+            {
+                "id": 368,
+                "localityName": "Sector 145"
+            },
+            {
+                "id": 369,
+                "localityName": "Sector 146"
+            },
+            {
+                "id": 370,
+                "localityName": "Sector 147"
+            },
+            {
+                "id": 371,
+                "localityName": "Sector 148"
+            },
+            {
+                "id": 372,
+                "localityName": "Sector 149"
+            },
+            {
+                "id": 373,
+                "localityName": "Sector 150"
+            },
+            {
+                "id": 374,
+                "localityName": "Sector 151"
+            },
+            {
+                "id": 375,
+                "localityName": "Sector 152"
+            },
+            {
+                "id": 376,
+                "localityName": "Sector 153"
+            },
+            {
+                "id": 377,
+                "localityName": "Sector 154"
+            },
+            {
+                "id": 378,
+                "localityName": "Sector 155"
+            },
+            {
+                "id": 379,
+                "localityName": "Sector 156"
+            },
+            {
+                "id": 380,
+                "localityName": "Sector 157"
+            },
+            {
+                "id": 381,
+                "localityName": "Sector 158"
+            },
+            {
+                "id": 382,
+                "localityName": "Sector 159"
+            },
+            {
+                "id": 383,
+                "localityName": "Sector 160"
+            },
+            {
+                "id": 384,
+                "localityName": "Sector 161"
+            },
+            {
+                "id": 385,
+                "localityName": "Sector 162"
+            },
+            {
+                "id": 386,
+                "localityName": "Sector 163"
+            },
+            {
+                "id": 387,
+                "localityName": "Sector 164"
+            },
+            {
+                "id": 388,
+                "localityName": "Sector 165"
+            },
+            {
+                "id": 389,
+                "localityName": "Sector 166"
+            },
+            {
+                "id": 390,
+                "localityName": "Sector 167"
+            },
+            {
+                "id": 391,
+                "localityName": "Sector 168"
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "stateId": 1,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Explore Noida Extension | Smart Living & Real Estate Hotspot",
+        "metaKeywords": "Noida Extension, Greater Noida West, property in Noida Extension, flats in Noida Extension, apartments in Noida Extension, villas in Noida Extension, plots in Noida Extension, Noida Extension real estate, affordable housing in Noida Extension, residential projects in Noida Extension, commercial property in Noida Extension, ready to move flats in Noida Extension, new projects in Noida Extension",
+        "metaDescription": "Discover Noida Extension (Greater Noida West) – affordable flats, villas, and plots in a fast-growing residential hub with excellent connectivity and modern amenities.",
+        "cityName": "Noida extension",
+        "stateName": "Uttar Pradesh",
+        "countryName": "India",
+        "cityDescription": "Noida Extension, also known as Greater Noida West, is a rapidly developing residential area in the National Capital Region (NCR). Known for its affordable housing options, modern infrastructure, and well-planned sectors, it has become a popular choice for homebuyers and investors. With excellent connectivity to Noida, Greater Noida, and Delhi via expressways and upcoming metro links, Noida Extension offers a balanced lifestyle with easy access to schools, shopping centers, and recreational facilities.",
+        "cityImage": null,
+        "slugURL": "noida-extension",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 49,
+        "stateId": 5,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Panipat | Properties, Flats & Real Estate in Panipat Haryana",
+        "metaKeywords": "Panipat properties, real estate Panipat, flats in Panipat, property in Panipat Haryana, residential projects Panipat, plots in Panipat, affordable housing Panipat, Panipat real estate investment",
+        "metaDescription": "Panipat, Haryana offers affordable residential properties, modern infrastructure, and good connectivity. Explore flats, plots, and investment opportunities in this rapidly developing city known for its industrial and historical significance.",
+        "cityName": "Panipat",
+        "stateName": "Haryana",
+        "countryName": "India",
+        "cityDescription": "Panipat, located in Haryana, is a historic and industrial city known for its textile industry and strategic location near Delhi. The city offers a mix of affordable residential properties, plots, and commercial spaces, making it attractive for homebuyers and investors.",
+        "cityImage": null,
+        "slugURL": "panipat",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 39,
+        "stateId": 3,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Pune – Cultural Capital of Maharashtra | Education, IT & Real Estate Hub",
+        "metaKeywords": "Pune city, Pune real estate, IT hub Pune, education in Pune, cultural city Maharashtra, Pune tourism, living in Pune, Pune development, Pune economy, Pune lifestyle",
+        "metaDescription": "Explore Pune, a vibrant city known for its rich cultural heritage, top educational institutions, growing IT sector, and thriving real estate market. A perfect blend of tradition and modernity.",
+        "cityName": "Pune",
+        "stateName": "Maharashtra",
+        "countryName": "India",
+        "cityDescription": "Pune is a dynamic city blending rich cultural heritage with modern IT industries, renowned educational institutions, vibrant lifestyle, and growing real estate, making it a sought-after destination in Maharashtra.",
+        "cityImage": null,
+        "slugURL": "pune",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 46,
+        "stateId": 10,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Rohini | Flats, Properties & Real Estate in Rohini, Delhi",
+        "metaKeywords": "Rohini Delhi, flats in Rohini, properties in Rohini, residential projects Rohini, Rohini real estate, Rohini housing, investment in Rohini Delhi, apartments in Rohini",
+        "metaDescription": "Rohini, Delhi is a well-developed residential area with modern apartments, schools, hospitals, and shopping centers. Explore properties and investment opportunities in this thriving and well-connected locality.",
+        "cityName": "Rohini",
+        "stateName": "Delhi",
+        "countryName": "India",
+        "cityDescription": "Rohini is a prominent residential sub-city in North-West Delhi, known for its well-planned sectors, wide roads, and modern amenities. It offers a mix of apartments, builder floors, and commercial spaces, making it attractive for families and investors alike.",
+        "cityImage": null,
+        "slugURL": "rohini",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 44,
+        "stateId": 5,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Sonipat Real Estate – Residential & Commercial Properties in Sonipat",
+        "metaKeywords": "Sonipat real estate, apartments in Sonipat, villas in Sonipat, plots in Sonipat, residential projects Sonipat, commercial property Sonipat, Sonipat property investment, Sonipat Haryana homes",
+        "metaDescription": "Explore premium residential and commercial properties in Sonipat. Discover modern apartments, villas, plots, and investment opportunities with excellent connectivity, lifestyle amenities, and growing infrastructure in this rapidly developing city of Haryana.",
+        "cityName": "Sonipat",
+        "stateName": "Haryana",
+        "countryName": "India",
+        "cityDescription": "Sonipat, located in Haryana, is a rapidly developing city known for its excellent connectivity to Delhi and surrounding regions. It offers a mix of residential, commercial, and industrial opportunities.",
+        "cityImage": null,
+        "slugURL": "sonipat",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 36,
+        "stateId": 8,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Thiruvananthapuram – Capital of Kerala | Tourism, Culture & Attractions",
+        "metaKeywords": "Thiruvananthapuram, Trivandrum, Kerala capital city, Thiruvananthapuram tourism, beaches in Thiruvananthapuram, temples in Kerala, travel to Thiruvananthapuram, cultural attractions Kerala",
+        "metaDescription": "Discover Thiruvananthapuram, Kerala’s vibrant capital known for its rich cultural heritage, beautiful beaches, historic temples, and modern amenities. Explore top tourist attractions, local cuisine, and travel tips to make your visit memorable.",
+        "cityName": "Thiruvananthapuram",
+        "stateName": "Kerala",
+        "countryName": "India",
+        "cityDescription": "Thiruvananthapuram, Kerala’s capital, is known for its historic temples, beautiful beaches, and vibrant culture. It’s a thriving hub for education, IT, tourism, and traditional arts by the Arabian Sea.",
+        "cityImage": null,
+        "slugURL": "thiruvananthapuram",
+        "projectList": null,
+        "localities": []
+    },
+    {
+        "id": 34,
+        "stateId": 1,
+        "countryId": 1,
+        "districtId": 0,
+        "metaTitle": "Vrindavan – Spiritual City of Temples and Krishna Heritage",
+        "metaKeywords": "Vrindavan, Vrindavan temples, Krishna heritage city, pilgrimage in Vrindavan, spiritual tourism Vrindavan, sacred sites Vrindavan, Vrindavan ghats, religious tourism India, Vrindavan culture, Vrindavan attractions",
+        "metaDescription": "Explore Vrindavan, the holy city of Lord Krishna, renowned for its ancient temples, spiritual heritage, and vibrant cultural festivities. Discover sacred sites, scenic ghats, and a serene environment that attracts pilgrims and tourists from around the world.",
+        "cityName": "Vrindavan",
+        "stateName": "Uttar Pradesh",
+        "countryName": "India",
+        "cityDescription": "Vrindavan is a sacred city in Uttar Pradesh, renowned for its ancient temples, Krishna heritage, spiritual ghats, and vibrant festivals, attracting pilgrims and tourists seeking devotion, culture, and serene surroundings.",
+        "cityImage": null,
+        "slugURL": "vrindavan",
+        "projectList": null,
+        "localities": []
+    }
+]
