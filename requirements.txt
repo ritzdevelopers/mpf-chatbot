@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+python-dotenv
+pydantic
+langchain
+langchain-community
+langchain-core
+langchain-google-genai
+langgraph
+langchain-chroma
+chromadb
+sentence-transformers
+duckduckgo-search
+ddgs
+torch
