@@ -1,20 +1,19 @@
+import json
 import os
+import re
 from datetime import datetime
 from dotenv import load_dotenv
 
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
-from langchain_community.tools import DuckDuckGoSearchRun
-
 from langchain_google_genai import ChatGoogleGenerativeAI
-
+from langchain_community.tools import DuckDuckGoSearchRun
 from langgraph.prebuilt import create_react_agent
-from langgraph.checkpoint.memory import MemorySaver
 
 from langchain_core.tools import tool
 
@@ -23,7 +22,7 @@ from langchain_core.tools import tool
 # =========================
 
 load_dotenv()
-
+search_tool = DuckDuckGoSearchRun()
 # =========================
 # FASTAPI
 # =========================
@@ -51,6 +50,9 @@ llm = ChatGoogleGenerativeAI(
     temperature=0.3
 )
 
+# Lower variance for routing / query synthesis
+llm_analyze = llm.bind(temperature=0.2)
+
 # =========================
 # EMBEDDINGS
 # =========================
@@ -68,17 +70,21 @@ vector_db = Chroma(
     embedding_function=embeddings
 )
 
+RAG_FETCH_K = 15
+
 retriever = vector_db.as_retriever(
-    search_kwargs={"k": 5}
+   search_type="similarity",
+    search_kwargs={"k": RAG_FETCH_K}
 )
 
-print("✅ Chroma DB Loaded Successfully")
+# Minimum context size to prefer RAG over agent (characters)
+MIN_RAG_CONTEXT_CHARS = 80
+
+print("Chroma DB Loaded Successfully")
 
 # =========================
 # TOOLS
 # =========================
-
-search_tool = DuckDuckGoSearchRun()
 
 @tool
 def get_current_datetime():
@@ -86,25 +92,313 @@ def get_current_datetime():
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 # =========================
-# MEMORY
+# AGENT (fallback when RAG has no relevant context)
 # =========================
-
-memory = MemorySaver()
 
 agent = create_react_agent(
     model=llm,
-    tools=[
-        search_tool,
-        get_current_datetime
-    ],
-    checkpointer=memory
+    tools=[get_current_datetime, search_tool],
 )
 
 # =========================
-# CUSTOM CHAT MEMORY
+# FULL CHAT HISTORY (per user: first message → now, like ChatGPT)
 # =========================
 
-chat_histories = {}
+_user_chat_histories: dict[str, list[dict]] = {}
+MAX_HISTORY_MESSAGES = 200
+MAX_HISTORY_PROMPT_CHARS = 32000
+
+
+def init_chat_history(user_id: str) -> None:
+    """Ensure a history list exists for this user/session."""
+    if user_id not in _user_chat_histories:
+        _user_chat_histories[user_id] = []
+
+
+def append_chat_message(user_id: str, role: str, content: str) -> None:
+    """Store one message (role: 'user' or 'assistant')."""
+    init_chat_history(user_id)
+    text = (content or "").strip()
+    if not text:
+        return
+    _user_chat_histories[user_id].append({"role": role, "content": text})
+    if len(_user_chat_histories[user_id]) > MAX_HISTORY_MESSAGES:
+        _user_chat_histories[user_id] = _user_chat_histories[user_id][
+            -MAX_HISTORY_MESSAGES:
+        ]
+
+
+def append_chat_turn(user_id: str, user_message: str, assistant_message: str) -> None:
+    """Store a completed exchange after the bot replies."""
+    append_chat_message(user_id, "user", user_message)
+    append_chat_message(user_id, "assistant", assistant_message)
+
+
+def get_full_chat_history_text(user_id: str) -> str:
+    """
+    Full conversation from session start until the last reply (excludes the
+    message currently being processed). Used by analyze / RAG / agent / beautify.
+    """
+    messages = _user_chat_histories.get(user_id) or []
+    if not messages:
+        return "(no prior conversation)"
+
+    lines = []
+    for m in messages:
+        label = "User" if m["role"] == "user" else "Assistant"
+        lines.append(f"{label}: {m['content']}")
+
+    full = "\n".join(lines)
+    if len(full) <= MAX_HISTORY_PROMPT_CHARS:
+        return full
+
+    # Long sessions: keep opening turns + most recent turns
+    head = "\n".join(lines[:6])
+    tail_budget = MAX_HISTORY_PROMPT_CHARS - len(head) - 100
+    tail_lines: list[str] = []
+    size = 0
+    for line in reversed(lines[6:]):
+        if size + len(line) + 1 > tail_budget:
+            break
+        tail_lines.insert(0, line)
+        size += len(line) + 1
+    omitted = len(lines) - 6 - len(tail_lines)
+    mid = (
+        f"\n... [{omitted} earlier messages omitted — full history is stored] ...\n"
+        if omitted > 0
+        else "\n"
+    )
+    return head + mid + "\n".join(tail_lines)
+
+
+def clear_chat_history(user_id: str) -> None:
+    """Reset history for a user (optional API use)."""
+    _user_chat_histories[user_id] = []
+
+
+def _llm_content_to_str(content) -> str:
+    """Normalize Gemini/LangChain message content to a plain string for JSON + UI."""
+    if content is None:
+        return ""
+    if isinstance(content, str):
+        return content.strip()
+    if isinstance(content, list):
+        parts = []
+        for block in content:
+            if isinstance(block, str):
+                parts.append(block)
+            elif isinstance(block, dict):
+                parts.append(
+                    block.get("text")
+                    or block.get("content")
+                    or ""
+                )
+        return "\n".join(p for p in parts if p).strip()
+    return str(content).strip()
+
+
+def _is_advisory_intent(user_message: str) -> bool:
+    """Sell/buy/rent advice — not a request to browse property listings."""
+    return bool(
+        re.search(
+            r"\b(sell|selling|buy|buying|rent|renting|list\s+my|want\s+to\s+sell)\b",
+            user_message,
+            re.IGNORECASE,
+        )
+    )
+
+
+def _parse_json_from_llm(text: str) -> dict:
+    raw = (text or "").strip()
+    raw = re.sub(r"^```(?:json)?\s*", "", raw, flags=re.IGNORECASE)
+    raw = re.sub(r"\s*```\s*$", "", raw)
+    return json.loads(raw)
+
+
+def analyze_chat_and_build_rag_query(
+    user_message: str, full_chat_history_text: str
+) -> dict:
+    """
+    Step 1 — LLM reads full session history + new message, outputs RAG search query.
+    Returns: search_query (str), is_listing_intent (bool).
+    """
+    prompt = f"""You help search an Indian real-estate vector database.
+
+FULL CONVERSATION HISTORY (from session start):
+{full_chat_history_text}
+
+LATEST USER MESSAGE (answer this; use history for follow-ups like "it", "that area", "more"):
+{user_message}
+
+Reply with ONLY valid JSON (no markdown), exactly this shape:
+{{"search_query": "<concise keyword-rich English search text>", "is_listing_intent": true or false}}
+
+Rules for search_query:
+- Read the ENTIRE conversation history so follow-ups inherit location, BHK, budget, builder, and intent from earlier turns.
+- Merge follow-ups with prior topics (locations, BHK, budget, builder names).
+- Expand regions when relevant: e.g. "Delhi NCR" → Delhi New Delhi Gurgaon Gurugram Noida Greater Noida Ghaziabad Faridabad NCR National Capital Region.
+- Include BHK both as digits and words when mentioned (e.g. 3 BHK three bedroom).
+- Add helpful synonyms: apartment flat project residential housing society.
+- Prefer broad retrieval where user asks for lists / all projects / multiple options.
+- Do not chat; output JSON only.
+
+is_listing_intent: true ONLY if user wants to browse/see multiple property listings or projects (e.g. "show 3bhk in Noida", "list projects"). false for selling their own property, buying process, general advice, or services."""
+    try:
+        r = llm_analyze.invoke(prompt)
+        content = _llm_content_to_str(getattr(r, "content", None) or r)
+        data = _parse_json_from_llm(content)
+        sq = (data.get("search_query") or "").strip()
+        if not sq:
+            sq = user_message.strip()
+        is_listing = bool(data.get("is_listing_intent"))
+        if _is_advisory_intent(user_message):
+            is_listing = False
+        return {
+            "search_query": sq,
+            "is_listing_intent": is_listing,
+        }
+    except Exception as e:
+        print(f"⚠️ analyze_chat_and_build_rag_query fallback: {e}")
+        return {
+            "search_query": user_message.strip(),
+            "is_listing_intent": False,
+        }
+
+
+def synthesize_rag_query_from_chat(user_message: str, prior_chat_text: str) -> dict:
+    """Alias for analyze_chat_and_build_rag_query."""
+    return analyze_chat_and_build_rag_query(user_message, prior_chat_text)
+
+
+def rag_context_is_present(docs: list, context: str) -> bool:
+    """True only when retrieval returned documents and non-trivial text."""
+    if not docs:
+        return False
+    return len((context or "").strip()) >= MIN_RAG_CONTEXT_CHARS
+
+
+def rag_context_matches_question(
+    user_message: str,
+    rag_query_used: str,
+    context_excerpt: str,
+    full_chat_history_text: str,
+) -> bool:
+    """Gemini decides if retrieved chunks are relevant enough; on failure → agent (False)."""
+    excerpt = (context_excerpt or "")[:6000]
+    prompt = f"""You judge if PASSAGE snippets can reasonably answer the USER QUESTION for Indian real estate.
+
+FULL CONVERSATION HISTORY:
+{full_chat_history_text}
+
+CURRENT USER QUESTION:
+{user_message}
+
+SEARCH QUERY USED:
+{rag_query_used}
+
+PASSAGE EXCERPT:
+{excerpt}
+
+Reply with ONLY one word: YES if passages contain useful on-topic facts for this question (including follow-ups that refer to earlier chat); NO if passages are empty, off-topic, or too thin."""
+    try:
+        r = llm_analyze.invoke(prompt)
+        t = _llm_content_to_str(getattr(r, "content", None)).upper()
+        return t.startswith("Y")
+    except Exception as e:
+        print(f"⚠️ rag_context_matches_question failed, routing to agent: {e}")
+        return False
+
+
+def beautify_rag_response(
+    query: str,
+    full_chat_history_text: str,
+    context: str,
+    is_listing: bool,
+) -> str:
+    """Step 3a — LLM polishes RAG answer using full chat + retrieved context."""
+    listing_block = LISTING_RESPONSE_RULES if is_listing else ""
+    beautify_prompt = f"""
+{SYSTEM_RULE}
+
+FULL CONVERSATION HISTORY:
+{full_chat_history_text}
+
+CURRENT USER QUESTION:
+{query}
+
+Context (from MyPropertyFact knowledge base):
+{context}
+
+{listing_block}
+
+Write a polished, helpful reply for the user.
+- Use conversation history to resolve references ("it", "there", "same builder", etc.).
+- Use ALL relevant projects/properties found in Context.
+- If matching project names exist in Context, ALWAYS mention them clearly.
+- Never say information is unavailable if Context contains relevant property/project data.
+- Do not invent facts outside Context.
+- If listing intent: use a clear numbered list with one property per line.
+"""
+    response = llm.invoke(beautify_prompt)
+    return _llm_content_to_str(getattr(response, "content", None))
+
+
+def _invoke_agent(query: str, full_chat_history_text: str, is_listing: bool) -> str:
+    """Step 3b — Agent / LLM when RAG context is missing or not relevant."""
+    agent_listing = ""
+    if is_listing:
+        agent_listing = """
+- User wants property listings: present each option as a numbered list (name, area, key details).
+"""
+    prompt = f"""
+{SYSTEM_RULE}
+
+FULL CONVERSATION HISTORY (session start → now):
+{full_chat_history_text}
+
+CURRENT USER QUESTION:
+{query}
+
+IMPORTANT:
+- Read the full history; answer the CURRENT question in continuity with earlier messages.
+- Stay inside real estate domain.
+- For selling, buying, or renting their own property: give practical steps (valuation, listing on mypropertyfact.in, documentation, brokers) — do not only list random projects.
+{agent_listing}
+"""
+    # Direct LLM first (fast, reliable for advisory questions like "sell my property")
+    try:
+        r = llm.invoke(prompt)
+        answer = _llm_content_to_str(getattr(r, "content", None))
+        if answer:
+            return answer
+    except Exception as e:
+        print(f"⚠️ direct LLM fallback failed: {e}")
+
+    # ReAct agent backup
+    try:
+        response = agent.invoke(
+            {"messages": [("human", prompt)]}
+        )
+        answer = _llm_content_to_str(response["messages"][-1].content)
+        if answer:
+            return answer
+    except Exception as e:
+        print(f"⚠️ agent.invoke failed: {e}")
+
+    return (
+        "I can help with selling, buying, renting, and property search on MyPropertyFact. "
+        "Please try your question again, or visit https://mypropertyfact.in to list your property."
+    )
+
+
+LISTING_RESPONSE_RULES = """
+LISTING / MULTIPLE PROPERTIES — FORMATTING:
+- Present every DISTINCT property or project mentioned in Context as its own numbered item (1., 2., 3., …).
+- Do not stop after two items if Context clearly describes more — surface all distinct listings Context supports.
+- Each item: **Name / title** — area or city — BHK/size/price only if stated in Context.
+- Do not invent projects not present in Context.
+- Short friendly intro, then the numbered list.
+"""
 
 # =========================
 # SYSTEM RULE
@@ -138,8 +432,8 @@ RULES:
   "As an AI language model"
 
 - Talk naturally like a real property advisor.
-- Understand previous conversation references.
-- Keep answers concise and practical.
+- Use the full conversation history provided each turn; treat follow-ups as part of one ongoing chat.
+- Keep answers concise and practical unless the user asked for lists or many options.
 """
 
 # =========================
@@ -166,170 +460,83 @@ def home():
 
 @app.post("/chat")
 def chat(req: ChatRequest):
+    try:
+        return _chat_handler(req)
+    except Exception as e:
+        print(f"❌ /chat error: {e}")
+        raise HTTPException(
+            status_code=500,
+            detail="Something went wrong. Please try again.",
+        ) from e
 
-    query = req.message
+
+def _chat_handler(req: ChatRequest):
+    query = req.message.strip()
     user_id = req.user_id
 
     print("\n=========================")
     print(f"👤 USER: {query}")
 
-    # =========================
-    # USER MEMORY INIT
-    # =========================
+    if not query:
+        return {"mode": "error", "response": "Please enter a message."}
 
-    if user_id not in chat_histories:
-        chat_histories[user_id] = []
+    init_chat_history(user_id)
+    full_history = get_full_chat_history_text(user_id)
+    history_turns = len(_user_chat_histories.get(user_id, []))
+    print(f"📜 History messages stored: {history_turns}")
 
-    # =========================
-    # PREVIOUS CHAT HISTORY
-    # =========================
+    # Step 1: Analyze full history + new message → RAG search query
+    synthesis = analyze_chat_and_build_rag_query(query, full_history)
+    rag_search_query = synthesis["search_query"]
+    is_listing = synthesis["is_listing_intent"]
 
-    previous_conversation = "\n".join(
-        chat_histories[user_id]
-    )
+    print(f"🔎 RAG search query: {rag_search_query}")
+    print(f"📋 Listing intent: {is_listing}")
 
-    # =========================
-    # ENHANCED QUERY
-    # =========================
+    # Step 2: RAG retrieval
+    docs = retriever.invoke(rag_search_query)
+    context = "\n\n".join(d.page_content for d in docs).strip()
 
-    enhanced_query = f"""
-Previous Conversation:
-{previous_conversation}
-
-Current User Question:
-{query}
-"""
-
-    # =========================
-    # RAG SEARCH
-    # =========================
-
-    docs = retriever.invoke(enhanced_query)
-
-    context = "\n\n".join([
-        d.page_content
-        for d in docs
-    ]).strip()
-
-    # =========================
-    # RAG MODE
-    # =========================
-
-    if context and len(context) > 50:
-
-        print("🔵 MODE: RAG USED")
-
-        prompt = f"""
-{SYSTEM_RULE}
-
-Conversation History:
-{previous_conversation}
-
-Context:
-{context}
-
-Question:
-{query}
-
-IMPORTANT:
-- Understand references from previous chat
-- Answer directly
-- Be conversational
-- No robotic sentences
-"""
-
-        response = llm.invoke(prompt)
-
-        answer = response.content
-
-        # =========================
-        # SAVE MEMORY
-        # =========================
-
-        chat_histories[user_id].append(
-            f"User: {query}"
-        )
-
-        chat_histories[user_id].append(
-            f"Assistant: {answer}"
-        )
-
-        # Keep last 10 entries
-        chat_histories[user_id] = (
-            chat_histories[user_id][-10:]
-        )
-
-        print("✅ RESPONSE GENERATED")
-
-        return {
-            "mode": "rag",
-            "response": answer
-        }
-
-    # =========================
-    # AGENT MODE
-    # =========================
-
-    else:
-
-        print("🟢 MODE: AGENT USED")
-
-        config = {
-            "configurable": {
-                "thread_id": user_id
-            }
-        }
-
-        response = agent.invoke(
-            {
-                "messages": [
-                    (
-                        "human",
-                        f"""
-{SYSTEM_RULE}
-
-Conversation History:
-{previous_conversation}
-
-Current User Question:
-{query}
-
-IMPORTANT:
-- Understand previous references
-- Stay inside real estate domain
-- Use tools if needed
-"""
-                    )
-                ]
-            },
-            config=config
-        )
-
-        answer = response["messages"][-1].content
-
-        # =========================
-        # SAVE MEMORY
-        # =========================
-
-        chat_histories[user_id].append(
-            f"User: {query}"
-        )
-
-        chat_histories[user_id].append(
-            f"Assistant: {answer}"
-        )
-
-        # Keep last 10 entries
-        chat_histories[user_id] = (
-            chat_histories[user_id][-10:]
-        )
-
-        print("✅ RESPONSE GENERATED")
-
+    # Step 3: Missing / empty context → agent (with full history)
+    if not rag_context_is_present(docs, context):
+        print("🟢 MODE: AGENT USED (RAG context missing or empty)")
+        answer = _invoke_agent(query, full_history, is_listing)
+        append_chat_turn(user_id, query, answer)
+        print("✅ RESPONSE GENERATED (AGENT)")
         return {
             "mode": "agent",
-            "response": answer
+            "response": answer,
+            "rag_query": rag_search_query,
+            "reason": "rag_context_missing",
         }
+
+    # Step 4: Context exists — check relevance; if not → agent
+    # if not rag_context_matches_question(
+    #     query, rag_search_query, context, full_history
+    # ):
+    #     print("🟢 MODE: AGENT USED (RAG context not relevant)")
+    #     answer = _invoke_agent(query, full_history, is_listing)
+    #     append_chat_turn(user_id, query, answer)
+    #     print("✅ RESPONSE GENERATED (AGENT)")
+    #     return {
+    #         "mode": "agent",
+    #         "response": answer,
+    #         "rag_query": rag_search_query,
+    #         "reason": "rag_context_not_relevant",
+    #     }
+
+    # Step 5: RAG hit → beautify with full history + context
+    print("🔵 MODE: RAG USED")
+    answer = beautify_rag_response(query, full_history, context, is_listing)
+
+    append_chat_turn(user_id, query, answer)
+    print("✅ RESPONSE GENERATED (RAG)")
+
+    return {
+        "mode": "rag",
+        "response": answer,
+        "rag_query": rag_search_query,
+    }
 
 # =========================
 # STATIC FILES
@@ -1457,7 +1664,15 @@ body {
 # =========================
 
 script_js = """
-const USER_ID = 'user_' + Date.now();
+const USER_ID = (() => {
+  const key = 'mpf_chat_user_id';
+  let id = localStorage.getItem(key);
+  if (!id) {
+    id = 'user_' + Date.now();
+    localStorage.setItem(key, id);
+  }
+  return id;
+})();
 let chatOpen = false;
 
 // ---- Open / Close ----
@@ -1501,7 +1716,9 @@ function appendMessage(role, text) {
 }
 
 function formatText(text) {
-  return text
+  if (text == null) return '';
+  const s = typeof text === 'string' ? text : String(text);
+  return s
     .replace(/\\*\\*(.*?)\\*\\*/g, '<strong>$1</strong>')
     .replace(/\\n/g, '<br/>');
 }
@@ -1552,9 +1769,21 @@ async function sendMessage() {
     });
     const data = await res.json();
     removeTyping();
-    appendMessage('bot', data.response);
+    if (!res.ok) {
+      appendMessage('bot', data.detail || '⚠️ Something went wrong. Please try again.');
+      return;
+    }
+    const reply = data.response != null
+      ? (typeof data.response === 'string' ? data.response : String(data.response))
+      : '';
+    if (!reply) {
+      appendMessage('bot', '⚠️ Empty response from server. Please try again.');
+      return;
+    }
+    appendMessage('bot', reply);
   } catch (err) {
     removeTyping();
+    console.error(err);
     appendMessage('bot', '⚠️ Sorry, I could not connect. Please try again.');
   } finally {
     btn.disabled = false;
